@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Log In</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/tonystar/bootstrap-float-label/v4.0.1/dist/bootstrap-float-label.min.css"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+    <img class="col-xs-12 banner-img" src="images/desert.jpg"/>
+</header>
+
+        <div class="login-widget col-xs-10 col-sm-5 ">
+                <form id="login-form" action="/" method="POST" >  
+
+                   
+			<div class="form-group float-label-control">                        
+                       		 <input type="text" class="form-control" placeholder="Enter your User ID"  maxlength="12" id="UserId" name="UserId" pattern="\w{6,12}" required/>
+                   		 <label for="">Enter your User ID</label>
+			</div>
+
+			<div class="form-group float-label-control">                        
+                       		 <input type="password" class="form-control" placeholder="Enter your Password" maxlength="15" id="Pwd" name="Pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}" />
+                   		 <label for="Pwd">Enter your Password</label>
+			</div>
+
+
+                <div class="form-group">
+                    <label class="">Remember Me</label>
+                    <div class="checkbox checkbox-primary ">
+                         <input id="remember" type="checkbox" name="remember" value="remember" />
+                        <label for="remember"></label>
+                      </div>            
+                  </div>
+
+
+
+                    <button class="btn btn-primary form-control" id="submitLogin" type="submit">Log On</button> 
+
+
+                <p class="forgotID">    <a href="#" >Forgot User ID or Password</a></p>
+                </form>
+        </div>
+
+
+
+</div>
+
+<footer>
+    <ul class="primaryFooter">
+        <li><a href="#">Enroll</a></li>
+        <li><a href="#">ATM & Branch</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <ul class="secFooter">
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Info</a></li>
+    </ul>
+
+<p> Equal Oppurtunity Lender</p<p> Deposit products provided by jPMorgan Chase Bank, N.A. Member FDIC Credit cards are issued by Chase Bank USA, NA</p>
+<p> @copy; 2017 JpMorgan Chase & Co.</p>
+
+</footer>
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
